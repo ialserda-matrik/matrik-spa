@@ -1,0 +1,28 @@
+<p>This is the blog view.</p>
+
+<form role="form" ng-submit="blogCtrl.addBlog()">
+  <div class="row">
+    <div class="input-group">
+      <input type="text" ng-model="blogCtrl.blog" placeholder="Enter blog text" class="form-control">
+      <span class="input-group-btn">
+        <input type="submit" class="btn btn-primary" value="Add">
+      </span>
+    </div>
+  </div>
+</form>
+<br /><br />
+
+
+<!-- Todos list -->
+<div ui-sortable ng-model="blogCtrl.blogs">
+<p class="input-group" ng-repeat="blog in blogCtrl.blogs track by $index" style="padding:5px 10px; cursor: move;">
+  <input type="text" ng-model="blog" class="form-control">
+  <span class="input-group-btn">
+    <button class="btn btn-danger" ng-click="blogCtrl.removeTodo($index)" aria-label="Remove">X</button>
+  </span>
+</p>
+</div>
+
+<pre>
+  {{blogCtrl.blog}}
+</pre>

@@ -9,9 +9,10 @@
  */
 angular.module('matrikSpaApp')
   .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    var self = this;
+    self.about = {
+      text_1: "Contact textblok 1",
+      text_2: "Contact textblok 2",
+    }
+    ;
   });
