@@ -1,4 +1,6 @@
-<p>This is the blog view.</p>
+<div class="page-header">
+  <h2>Blog</h2>
+</div>
 
 <form role="form" ng-submit="blogCtrl.addBlog()">
   <div class="row">
@@ -24,5 +26,8 @@
 </div>
 
 <pre>
-  {{blogCtrl.blog}}
+  {{blogCtrl.blog | json}}
+</pre>
+<pre>
+  {{blogCtrl.blogs | json}}
 </pre>

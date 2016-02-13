@@ -1,6 +1,9 @@
 {
   "name": "matrik-spa",
+  "description": "Matrik Single Page Website",
   "version": "0.0.0",
+  "homepage": "https://github.com/ialserda-matrik/matrik-spa",
+  "private": true,
   "dependencies": {
     "angular": "^1.4.0",
     "bootstrap": "^3.2.0",
