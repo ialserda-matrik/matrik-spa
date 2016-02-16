@@ -2,10 +2,10 @@
   <h2>Blog</h2>
 </div>
 
-<form role="form" ng-submit="blogCtrl.addBlog()">
+<form role="form" data-ng-submit="blogCtrl.addBlog()">
   <div class="row">
     <div class="input-group">
-      <input type="text" ng-model="blogCtrl.blog" placeholder="Enter blog text" class="form-control">
+      <input type="text" data-ng-model="blogCtrl.blog" placeholder="Enter blog text" class="form-control">
       <span class="input-group-btn">
         <input type="submit" class="btn btn-primary" value="Add">
       </span>
@@ -16,11 +16,11 @@
 
 
 <!-- Todos list -->
-<div ui-sortable ng-model="blogCtrl.blogs">
-<p class="input-group" ng-repeat="blog in blogCtrl.blogs track by $index" style="padding:5px 10px; cursor: move;">
-  <input type="text" ng-model="blog" class="form-control">
+<div ui-sortable data-ng-model="blogCtrl.blogs">
+<p class="input-group" data-ng-repeat="blog in blogCtrl.blogs track by $index" style="padding:5px 10px; cursor: move;">
+  <input type="text" data-ng-model="blog" class="form-control">
   <span class="input-group-btn">
-    <button class="btn btn-danger" ng-click="blogCtrl.removeTodo($index)" aria-label="Remove">X</button>
+    <button class="btn btn-danger" data-ng-click="blogCtrl.removeTodo($index)" aria-label="Remove">X</button>
   </span>
 </p>
 </div>

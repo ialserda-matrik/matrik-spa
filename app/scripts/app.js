@@ -43,4 +43,11 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .directive('infoWidgets', [function() {
+    return {
+      templateUrl: 'templates/infowidget.html',
+      restrict: 'AE'
+    };
+  }])
+;

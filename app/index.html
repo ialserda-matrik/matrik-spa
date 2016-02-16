@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body ng-app="matrikSpaApp">
+<body data-ng-app="matrikSpaApp">
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
@@ -53,12 +53,12 @@
 </div>
 
 <div class="container">
-  <div ng-view=""></div>
+  <div data-ng-view=""></div>
 </div>
 
 <div class="footer">
   <div class="container">
-    <p> Matrik &copy; 2016</p>
+    <p> Matrik &copy; 2016 - version 2</p>
   </div>
 </div>
 
@@ -94,12 +94,10 @@
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
-<script src="scripts/controllers/home/homecontroller.js"></script>
-<script src="scripts/controllers/about/aboutcontroller.js"></script>
-<script src="scripts/controllers/home/homecontroller.js"></script>
-<script src="scripts/controllers/blog/blogcontroller.js"></script>
-<script src="scripts/controllers/about/aboutcontroller.js"></script>
-<script src="scripts/controllers/contact/contactcontroller.js"></script>
+<script src="scripts/features/home-page/mspa-home.controller.js"></script>
+<script src="scripts/features/about-page/mspa-about.controller.js"></script>
+<script src="scripts/features/blog-page/mspa-blog.controller.js"></script>
+<script src="scripts/features/contact-page/mspa-contact.controller.js"></script>
 <!-- endbuild -->
 </body>
 </html>
